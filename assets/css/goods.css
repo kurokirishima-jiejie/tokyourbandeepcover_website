@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+.buttons-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    max-width: 800px;
+    margin: 0 auto 50px;
+    width: 100%;
+}
+
+
+h1.goods-headline{
+    text-align: center;
+    font-size: 3rem;
+    margin: 0 auto 50px;
+}
+
+button{
+	font-size:1.6em;
+    font-family: Rajdhani;
+	margin-right:10px;
+    /* font-weight: bold; */
+	color:#E9ECEB;
+	padding:3px 22px;
+    margin-bottom: 15px;
+	background:#717171;
+	border-radius:6px;
+	border:none;
+	display:inline-block;
+	cursor:pointer;
+}
+
+#buttons button:last-child{
+	margin-right:0;
+}
+
+button:focus{
+	outline:none;
+}
+
+button:hover{
+	background:rgb(159, 175, 170);
+}
+
+/* goods-area */
+.goods-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.goods-area::before{
+    content:"";
+    display: block;
+    width:255px;
+    order:1;
+  }
+.goods-area::after{
+    content:"";
+    display: block;
+    width:255px;
+}
+
+.item-card{
+    width: 25%;
+    width: 235px;
+    margin-bottom: 25px;
+    padding: 0 10px;
+}
+.item-card img{
+    object-fit: cover;
+    max-width: 100%;
+    width: 235px;
+   
+}
+.item-name{
+    padding: 3px 5px;
+    text-align: center;
+}
+.item-price{
+    font-size: 1.3rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.item-price span{
+    font-size: 1rem;
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+    .goods-area{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    
+        max-width: 100%;
+        margin: 0 auto;
+        /* width: 100%; */
+    }
+
+    .buttons-area{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    
+        max-width: 100%;
+        margin: 0 auto 50px;
+        width: 90%;
+    }
+    
+}
+
+
+/*
+#list{
+	margin-right:-20px;
+	padding-top:50px;
+}
+
+#list li{
+	margin-right:20px;
+	margin-bottom:25px;
+	width:150px;
+	height:150px;
+	list-style-type:none;
+	float:left;
+}
+
+#list li.red{
+	background:#D2334C;
+}
+
+#list li.blue{
+	background:#404669;
+}
+
+#list li.yellow{
+	background:#F7D139;
+}
+
+#list li.gray{
+	background:#CCC;
+} */

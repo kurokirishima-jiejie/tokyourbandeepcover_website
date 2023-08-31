@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+.layout{
+    display: flex;
+    flex-wrap: wrap;
+
+    /* overflow: hidden; */
+
+}
+
+.mainNews{
+    flex:7;
+    /* min-width: 600px; */
+    min-height: 100vh;
+
+    padding: 0 25px;
+}
+
+.sideslider{
+    flex:3;
+    min-width: 200px;
+    height: auto;
+    /* background-color: #ccc; */
+
+    padding: 0 25px;
+    margin-top: 20px;
+    /* position: sticky; */
+    /* top: 0; */
+}
+
+
+.eventInfo{
+    max-width: 600px;
+    margin: 0 15px;
+    width: 100%;
+}
+
+.eventImages{
+    max-width: 600px;
+    height: auto;
+
+}
+.eventImages img{
+    max-width: 100%;
+}
+
+.submission{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    font-family: Rajdhani;
+}
+
+.newsHeadline{
+    font-family: Rajdhani;
+    font-weight: bold;
+    font-size: 2rem;
+
+    border-top: 1px solid #5d5d63;
+    border-bottom: 1px solid #5d5d63;
+    padding: 5px 0;
+    margin-bottom: 10px;
+
+}
+
+p.event-description,
+p.event-time,
+p.event-price{
+    margin: 20px 0;
+}
+
+.artist-info{
+    font-family: Rajdhani;
+}
+
+dt{
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+}
+
+dd{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.artist-info-head,
+.artist-info-body{
+    padding-bottom: 30px;
+}
+
+.archiveHeadline-area{
+    background-color: rgba(208, 3, 32, .9);
+    width: 100%;
+    line-height: 2.2;
+    color: #fff;
+    font-family: Rajdhani;
+    font-size: 2rem;
+
+}
+.archive-headline{
+    text-align: center;
+}
+.month-areaBox{
+    margin-top: 20px;
+}
+.month-discription{
+    background-color: #121212;
+    line-height: 3;
+    width: 100%;
+
+    border-bottom: 1px solid #fff;
+}
+.month-discription a{
+    color: #fff;
+    font-style: 1.5rem;
+    /* font-family: Rajdhani; */
+}
+
+p.month-discription{
+    margin-bottom: 5px;
+    padding-left: 5px;
+}
+
+@media screen and (max-width: 768px){
+    .layout{
+        width: 100%;
+        display: block;
+    }
+
+    .mainNews{
+        width: 100%;
+        padding: 0;
+    }
+
+    .eventImages img{
+        max-width: 100%;
+    }
+
+    .submission{
+        width: 96%;
+    }
+
+    .newsHeadline{
+        padding-left: 5px;
+    }
+
+    .sp-layout{
+        margin-left: 10px;
+    }
+
+    dd{
+        font-size: 1.7rem;
+        font-weight: bold;
+    }
+}

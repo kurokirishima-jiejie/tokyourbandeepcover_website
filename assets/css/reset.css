@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/* Reset CSS-shima-2023.02
+---------------------------------------------------*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,ruby,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,form,fieldset,legend,label,header,footer,hgroup,menu,nav,main,article,section,aside,details,figure,figcaption,canvas,embed,output,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;}
+header,footer,hgroup,menu,nav,main,article,section,aside,details,figure,figcaption{display:block;}
+body{line-height:1;}
+ol,ul{list-style:none;}
+/* hr{display:none;} */
+/* stylesheetが効いたらいらんから */
+address,em{font-style:normal;}
+table{border-collapse:collapse;border-spacing:0;}
+img,video{vertical-align:bottom;}
+/* インライン要素やから、ディセンダーが発生する
+ベースラインを調整するプロパティ
+画像の隙間を埋めてくれる！ */
+
+
+/* Fonts
+游ゴシックのためのフォント設定------Windows用→游ゴシック","Yu Gothic
+"游ゴシック体",YuGothic→アップル用
+--*/
+/* 明朝体は感覚が狭いから0.1EM開ける */
+
+/* clearfix
+---------------------------------------------------*/
+.clearfix::after {content:'';display:block;clear:both;height:0;}
+/* floatが来た時カラム落ちさせるためのclearfix */
+
+body{
+    box-sizing: border-box;
+}

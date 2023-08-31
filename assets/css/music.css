@@ -1,0 +1,272 @@
+@charset "utf-8";
+
+
+@charset "utf-8";
+
+.layout{
+    display: flex;
+    flex-wrap: wrap;
+
+    /* overflow: hidden; */
+
+}
+
+.mainNews{
+    flex:7;
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 0 25px;
+}
+
+.sideslider{
+    flex:3;
+    min-width: 200px;
+    height: auto;
+    /* background-color: #ccc; */
+
+    padding: 0 25px;
+    margin-top: 20px;
+    /* position: sticky; */
+    /* top: 0; */
+}
+
+
+.musicInfo{
+    width: 100%;
+    height: auto;
+    margin: 20px auto 55px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/*
+.musicInfo::after {
+    display: block;
+    content:"";
+    width: 192px;
+    }
+*/
+.music-card{
+    width: 23%;
+    min-width: 178px;
+    min-height: 178px;
+    margin: 5px auto;
+    padding: 0 6px;
+
+    border-radius: 5px;
+}
+
+.card-head img{
+    width: 100%;
+    /* min-width: 150px; */
+    object-fit: cover;
+
+    border-radius: 5px 5px 0 0;
+}
+
+.card-body{
+    /* width: 100%; */
+    padding: 2px 5px;
+    background-color: #584f5b;
+
+    border-radius: 0 0 5px 5px;
+}
+.music-type{
+    background-color: #121212;
+    font-size: 1.2rem;
+    font-family: Rajdhani;
+
+    border-radius: 5px;
+    padding: 0 5px;
+}
+.card-bodyTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-bodyUnder{
+    font-size: 1.2rem;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block;
+    overflow: hidden;
+    width: 178px;
+}
+
+
+.song-name{
+    font-size: 1.2rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block;
+    overflow: hidden;
+}
+
+
+
+
+
+
+.eventImages{
+    max-width: 600px;
+    height: auto;
+
+}
+.eventImages img{
+    max-width: 100%;
+}
+
+.submission{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    font-family: Rajdhani;
+}
+
+.submission a{
+    color: #fff;
+    font-size: 1.6rem;
+    display: block;
+}
+
+.submission a {
+    position: relative;
+    /* padding-left: 30px; */
+  }
+   
+  .submission a::before { /* 背景の表示設定 */
+    content: "";
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: -14%;
+    transform: translateY(-2px);
+    width: 23px; /* 横幅 */
+    height: 23px; /* 高さ */
+    border-radius: 50%; /* 角の丸み */
+    background: #4682b4;
+  }
+   
+  .submission a::after { /* くの字の表示設定 */
+    content: "";
+    position: absolute;
+    margin: auto;
+    top: -3px;
+    bottom: 0;
+    left: -12%;
+    /* transform: translateY(-5%); */
+    width: 9px;
+    height: 9px;
+    border-top: 3px solid #fff;
+    border-right: 3px solid #fff;
+    transform: rotate(45deg);
+  }
+
+
+.newsHeadline{
+    font-family: Rajdhani;
+    font-weight: bold;
+    font-size: 2rem;
+
+    border-top: 1px solid #5d5d63;
+    border-bottom: 1px solid #5d5d63;
+    padding: 5px 0;
+    margin-bottom: 10px;
+
+}
+
+p.event-description,
+p.event-time,
+p.event-price{
+    margin: 20px 0;
+}
+
+.artist-info{
+    font-family: Rajdhani;
+}
+
+dt{
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+}
+
+dd{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.artist-info-head,
+.artist-info-body{
+    padding-bottom: 30px;
+}
+
+.archiveHeadline-area{
+    background-color: rgba(208, 3, 32, .9);
+    width: 100%;
+    line-height: 2.2;
+    color: #fff;
+    font-family: Rajdhani;
+    font-size: 2rem;
+
+}
+.archive-headline{
+    text-align: center;
+}
+.month-areaBox{
+    margin-top: 20px;
+}
+.month-discription{
+    background-color: #121212;
+    line-height: 3;
+    width: 100%;
+
+    border-bottom: 1px solid #fff;
+}
+.month-discription a{
+    color: #fff;
+    font-style: 1.5rem;
+    /* font-family: Rajdhani; */
+}
+
+p.month-discription{
+    margin-bottom: 5px;
+    padding-left: 5px;
+}
+
+@media screen and (max-width: 768px){
+    .layout{
+        width: 100%;
+        display: block;
+    }
+
+    .mainNews{
+        width: 100%;
+        padding: 0;
+    }
+
+    .eventImages img{
+        max-width: 100%;
+    }
+
+    .submission{
+        width: 96%;
+    }
+
+    .newsHeadline{
+        padding-left: 5px;
+    }
+
+    .sp-layout{
+        margin-left: 10px;
+    }
+
+    dd{
+        font-size: 1.7rem;
+        font-weight: bold;
+    }
+}
